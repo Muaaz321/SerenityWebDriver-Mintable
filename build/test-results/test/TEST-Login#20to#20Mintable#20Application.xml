@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login to Mintable Application" tests="3" skipped="0" failures="1" errors="0" timestamp="2022-05-30T03:39:07" hostname="KEENEYE" time="56.223">
+  <properties/>
+  <testcase name="Validation for broken images in stores page" classname="Login to Mintable Application" time="19.457">
+    <failure message="java.lang.RuntimeException: java.lang.RuntimeException: java.net.MalformedURLException: unknown protocol: data" type="java.lang.RuntimeException">java.lang.RuntimeException: java.lang.RuntimeException: java.net.MalformedURLException: unknown protocol: data
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.util.concurrent.ForkJoinTask.getThrowableException(ForkJoinTask.java:593)
+	at java.util.concurrent.ForkJoinTask.reportException(ForkJoinTask.java:677)
+	at java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:735)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateParallel(ForEachOps.java:160)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateParallel(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:583)
+	at Pages.MintableStore.isBrokenImagesAvailable(MintableStore.java:53)
+	at Pages.MintableStore$ByteBuddy$lb6otRdf.isBrokenImagesAvailable$accessor$T2r7wClI(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:503)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:483)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:457)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:209)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:196)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:84)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at Pages.MintableStore$ByteBuddy$lb6otRdf.isBrokenImagesAvailable(Unknown Source)
+	at Stepdefinition.Logintoapplication.validate_for_broken_image(Logintoapplication.java:30)
+	at ✽.validate for broken image(file:///C:/Users/User/IdeaProjects/MintableBDDSerenityproject/src/test/java/features/MintableAssignment.feature:6)
+Caused by: java.lang.RuntimeException: java.net.MalformedURLException: unknown protocol: data
+	at Pages.MintableStore.lambda$isBrokenImagesAvailable$0(MintableStore.java:57)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.ForEachOps$ForEachTask.compute(ForEachOps.java:291)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1067)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1703)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:172)
+Caused by: java.net.MalformedURLException: unknown protocol: data
+	at java.net.URL.&lt;init&gt;(URL.java:617)
+	at java.net.URL.&lt;init&gt;(URL.java:507)
+	at java.net.URL.&lt;init&gt;(URL.java:456)
+	at Pages.MintableStore.checkBrokenImageLink(MintableStore.java:65)
+	at Pages.MintableStore.lambda$isBrokenImagesAvailable$0(MintableStore.java:55)
+	... 9 more
+</failure>
+  </testcase>
+  <testcase name="Search for BoardApe" classname="Login to Mintable Application" time="18.13"/>
+  <testcase name="Successful login" classname="Login to Mintable Application" time="18.636"/>
+  <system-out><![CDATA[
+Scenario: Validation for broken images in stores page ?[90m# src/test/java/features/MintableAssignment.feature:3?[0m
+  ?[32mGiven ?[0m?[32muser is in store page?[0m                         ?[90m# Stepdefinition.Logintoapplication.user_is_in_store_page()?[0m
+Browse collections digital items for sale.
+  ?[32mWhen ?[0m?[32muser successfully navigated to the page?[0m        ?[90m# Stepdefinition.Logintoapplication.user_successfully_navigated_to_the_page()?[0m
+No of images are [[[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img], [[ChromeDriver: chrome on WINDOWS (709d6e026dfe50b3a5b4259bda9d9ba7)] -> tag name: img]]
+https://dgbijzg00pxv8.cloudfront.net/e1eb31a3-a3e0-4bfc-9d6e-04e34d00079e/0x7bd29408f11d2bfc23c34f18275bbf23bb716bc7/0/STORE_COVER.png?v=gdlph81q5&d=78x78---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/ef4cfa38-77be-4b13-af25-9660ed914b53/0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258/0/STORE_COVER.jpg?v=62z6jf57b&d=78x78---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/ef4cfa38-77be-4b13-af25-9660ed914b53/0x4e1f41613c9084fdb9e34e11fae9412427480e56/0/STORE_COVER.png?v=rlau4oxd1&d=78x78---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/ec9d71b1-b4ff-4e9b-9cf3-883a5bdc933d/000000-0000000002/100509048267912708826872918009772717344456562654116898997899979400545025876277/ITEM_PREVIEW1.jpg---> OK >>> is not broken link
+https://s3.us-east-2.amazonaws.com/mintable.app/store_covers/hero-carousel-bg-1.png---> OK >>> is not broken link
+https://s3.us-east-2.amazonaws.com/mintable.app/store_covers/hero-carousel-bg-5.png---> OK >>> is not broken link
+https://s3.us-east-2.amazonaws.com/mintable.app/store_covers/hero-carousel-bg-5.png---> OK >>> is not broken link
+https://s3.us-east-2.amazonaws.com/mintable.app/store_covers/hero-carousel-bg-5.png---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/Profile/PROFILE_fe763302-9773-40f3-b0fe-41a964ebd401.1?v=1653881955293&d=78x78---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/ef4cfa38-77be-4b13-af25-9660ed914b53/0xed5af388653567af2f388e6224dc7c4b3241c544/0/STORE_COVER.jpg?v=rvprwt2vr&d=78x78---> OK >>> is not broken link
+https://lh3.googleusercontent.com/GwnosrkaneKGEkWySxvTSzZ5bEUjWkRuQzLSNfrpgy2-gxYjoR3m5PohLT9Fzy0p1tohajZ1g-LFfF_ZLnS1GqlPNHPUaKUbDhbf=s130---> OK >>> is not broken link
+https://lh3.googleusercontent.com/Ju9CkWtV-1Okvf45wo8UctR-M9He2PjILP0oOvxE89AyiPPGtrR3gysu1Zgy0hjd2xKIgjJJtWIc0ybj4Vd7wv8t3pxDGHoJBzDB=s130---> OK >>> is not broken link
+https://s3.us-east-2.amazonaws.com/mintable.app/store_covers/hero-carousel-bg-5.png---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/ec9d71b1-b4ff-4e9b-9cf3-883a5bdc933d/000000-0000000000/100509048267912708826872918009772717344456562654155848335764881606264817550166/ITEM_PREVIEW1.jpg---> OK >>> is not broken link
+https://mintable.app/static/media/logo.bf39ab1e6dfa4a59010259cee4cfe616.svg---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/5c773c17-bc32-4c30-9836-135923e011bd/000000-0000000000/92779412141884356775809719348398383913457799712914900723448869358170232026168/ITEM_PREVIEW1.png---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/ef4cfa38-77be-4b13-af25-9660ed914b53/0x81ae0be3a8044772d04f32398bac1e1b4b215aa8/0/STORE_COVER.jpg?v=zy3jxmib2&d=78x78---> OK >>> is not broken link
+https://s3.us-east-2.amazonaws.com/mintable.app/store_covers/hero-carousel-bg-3.png---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/ef4cfa38-77be-4b13-af25-9660ed914b53/0x19b86299c21505cdf59ce63740b240a9c822b5e4/0/STORE_COVER.gif?v=idvlavnhn&d=78x78---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/fe763302-9773-40f3-b0fe-41a964ebd401/000000-000-0000-ba26-0000000000/7739/ITEM_PREVIEW1.JPG---> OK >>> is not broken link
+https://s3.us-east-2.amazonaws.com/mintable.app/store_covers/hero-carousel-bg-5.png---> OK >>> is not broken link
+https://s3.us-east-2.amazonaws.com/mintable.app/store_covers/hero-carousel-bg-3.png---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/f79308c4-ec86-492c-90f2-7c5f92db37ef/0x2880c6ecF2f770bd31DDB0d776CC81048899b600/109584945762857820609067259564348201602033839222432182400107747864324798161542/ITEM_PREVIEW1.jpg---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/8fe2704f-d6f0-476d-9543-80ab2e7053ca/37118d61-2423-4fa7-8d7a-e436429787b6/1/ITEM_PREVIEW1.png---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/ef4cfa38-77be-4b13-af25-9660ed914b53/0x60e4d786628fea6478f785a6d7e704777c86a7c6/0/STORE_COVER.png?v=boqh6vf15&d=78x78---> OK >>> is not broken link
+https://s3.us-east-2.amazonaws.com/mintable.app/store_covers/hero-carousel-bg-3.png---> OK >>> is not broken link
+https://s3.us-east-2.amazonaws.com/mintable.app/store_covers/hero-carousel-bg-1.png---> OK >>> is not broken link
+https://s3.us-east-2.amazonaws.com/mintable.app/store_covers/hero-carousel-bg-1.png---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/Profile/PROFILE_8fe2704f-d6f0-476d-9543-80ab2e7053ca.png?v=1653881955287&d=78x78---> OK >>> is not broken link
+https://s3.us-east-2.amazonaws.com/mintable.app/store_covers/hero-carousel-bg-5.png---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/ee51c79c-a07a-484e-a051-a2852ad4b7e4/0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b/0/STORE_COVER.jpeg?v=nhg4o0st9&d=78x78---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/Profile/PROFILE_ec9d71b1-b4ff-4e9b-9cf3-883a5bdc933d.jpg?v=1653881955290&d=78x78---> OK >>> is not broken link
+  ?[31mThen ?[0m?[31mvalidate for broken image?[0m                      ?[90m# Stepdefinition.Logintoapplication.validate_for_broken_image()?[0m
+      ?[31mjava.lang.RuntimeException: java.lang.RuntimeException: java.net.MalformedURLException: unknown protocol: data
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.util.concurrent.ForkJoinTask.getThrowableException(ForkJoinTask.java:593)
+	at java.util.concurrent.ForkJoinTask.reportException(ForkJoinTask.java:677)
+	at java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:735)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateParallel(ForEachOps.java:160)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateParallel(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:583)
+	at Pages.MintableStore.isBrokenImagesAvailable(MintableStore.java:53)
+	at Pages.MintableStore$ByteBuddy$lb6otRdf.isBrokenImagesAvailable$accessor$T2r7wClI(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:503)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:483)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:457)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:209)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:196)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:84)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at Pages.MintableStore$ByteBuddy$lb6otRdf.isBrokenImagesAvailable(Unknown Source)
+	at Stepdefinition.Logintoapplication.validate_for_broken_image(Logintoapplication.java:30)
+	at âœ½.validate for broken image(file:///C:/Users/User/IdeaProjects/MintableBDDSerenityproject/src/test/java/features/MintableAssignment.feature:6)
+Caused by: java.lang.RuntimeException: java.net.MalformedURLException: unknown protocol: data
+	at Pages.MintableStore.lambda$isBrokenImagesAvailable$0(MintableStore.java:57)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.ForEachOps$ForEachTask.compute(ForEachOps.java:291)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1067)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1703)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:172)
+Caused by: java.net.MalformedURLException: unknown protocol: data
+	at java.net.URL.<init>(URL.java:617)
+	at java.net.URL.<init>(URL.java:507)
+	at java.net.URL.<init>(URL.java:456)
+	at Pages.MintableStore.checkBrokenImageLink(MintableStore.java:65)
+	at Pages.MintableStore.lambda$isBrokenImagesAvailable$0(MintableStore.java:55)
+	... 9 more
+?[0m
+https://lh3.googleusercontent.com/7B0qai02OdHA8P_EOVK672qUliyjQdQDGNrACxs7WnTgZAkJa_wWURnIFKeOh5VTf8cfTqW3wQpozGedaC9mteKphEOtztls02RlWQ=s0---> OK >>> is not broken link
+https://s3.us-east-2.amazonaws.com/mintable.app/store_covers/hero-carousel-bg-5.png---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/ef4cfa38-77be-4b13-af25-9660ed914b53/0x23581767a106ae21c074b2276d25e5c3e136a68b/0/STORE_COVER.png?v=1ezde4go6&d=78x78---> OK >>> is not broken link
+https://dgbijzg00pxv8.cloudfront.net/Profile/PROFILE_f79308c4-ec86-492c-90f2-7c5f92db37ef.jpg?v=1653881955284&d=78x78---> OK >>> is not broken link
+
+Scenario: Search for BoardApe                  ?[90m# src/test/java/features/MintableAssignment.feature:8?[0m
+  ?[32mGiven ?[0m?[32muser is in store page?[0m                  ?[90m# Stepdefinition.Logintoapplication.user_is_in_store_page()?[0m
+  ?[32mWhen ?[0m?[32muser type as ?[0m?[32m?[1m'bored ape'?[0m                ?[90m# Stepdefinition.Logintoapplication.user_type_as_bored_ape(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mvalidate ?[0m?[32m?[1m'BoredApeYachtClub'?[0m?[32m is visible?[0m ?[90m# Stepdefinition.Logintoapplication.validate_is_visible(java.lang.String)?[0m
+
+Scenario: Successful login                            ?[90m# src/test/java/features/MintableAssignment.feature:13?[0m
+  ?[32mGiven ?[0m?[32muser is in store page?[0m                         ?[90m# Stepdefinition.Logintoapplication.user_is_in_store_page()?[0m
+  ?[32mWhen ?[0m?[32muser type as ?[0m?[32m?[1m'muaazster@gmail.com'?[0m?[32m in username?[0m ?[90m# Stepdefinition.Logintoapplication.user_type_as_in_username(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser type as ?[0m?[32m?[1m'Mintable@1'?[0m?[32m in password?[0m           ?[90m# Stepdefinition.Logintoapplication.user_type_as_in_password(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32msystem allows user to login?[0m                    ?[90m# Stepdefinition.Logintoapplication.system_allows_user_to_login()?[0m
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 62601
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 30, 2022 9:09:11 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 30, 2022 9:09:11 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: 101
+May 30, 2022 9:09:11 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 102 of 101
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 50376
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 30, 2022 9:09:28 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 30, 2022 9:09:28 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: 101
+May 30, 2022 9:09:28 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 102 of 101
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 52814
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 30, 2022 9:09:46 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 30, 2022 9:09:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: 101
+May 30, 2022 9:09:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 102 of 101
+]]></system-err>
+</testsuite>
